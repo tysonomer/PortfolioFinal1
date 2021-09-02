@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Red Rose', Arial;
+  padding: 0px .4px 0px .4px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #fff;
+}
+
+.nav-container a {
+  color: black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: initial;
+  padding: 0 1em;
+  color: black;
+}
+
+.logo {
+  margin: -2% 0 0 -3%;
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+.hero {
+  background: #d47c3c;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+  border-radius: 4px;
+}
+
+.hero-image {
+  display: none;
+}
+
+.section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.left {
+  text-align: center;
+  padding-top: 2px;
+  margin: -1px;
+}
+
+.left1-transistion2 {
+  margin-bottom: -4px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  letter-spacing: .2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.subtitle2 {
+  color: gold;
+  font-weight: bold;
+  background: #007bf7;
+  padding: .5em;
+  margin: -1px;
+  margin-bottom: 1.5em;
+}
+
+.subtitle3 {
+  color: black;
+  font-size: small;
+  padding: .3em;
+  margin-top: -1em;
+  text-align: center;
+}
+
+.subtitle4 {
+  color: black;
+  font-size: small;
+  padding: 1.3em;
+  margin-top: -2em;
+  text-align: center;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: black;
+  margin-bottom: 3em;
+  font-size: .85em;
+  line-height: 1.8em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skills {
+  background: #E5E5E5;
+}
+
+.skills-contianer ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.icon-container.one {
+  width: 50px;
+}
+
+.icon-container.two {
+  width: 100px;
+}
+
+.icon-container.three {
+  width: 60px;
+}
+
+.skill-title {
+  font-weight: bold;
+  display: none;
+}
+
+.featured-desc {
+  margin-bottom: 2em;
+  display: none;
+}
+
+hr {
+  height: 1em;
+  color: black;
+  border-width: 1px;
+}
+
+.portfolio {
+  background: white;
+}
+
+.portfolio-container a img {
+  border-radius: 3px;
+  margin-bottom: 2em;
+}
+
+.middle {
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.counting-sec {
+  width: 100%;
+  background: linear-gradient(15deg, #007bf7, #2096d1);
+}
+
+.inner-width {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  border-left: 1px solid #fff;
+}
+
+.counting-name {
+  font-size: 10px;
+}
+
+.col i {
+  font-size: 40px;
+  color: #333;
+}
+
+.num + {
+  font-size: 60px;
+  margin: 20px 5px 0 12px;
+}
+
+.num {
+  font-size: 60px;
+  margin: 20px 5px 0 12px;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured,
+  .portfolio {
+    text-align: left;
+  }
+  .featured,
+  .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left,
+  .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-contianer ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+  .featured::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: wheat;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: wheat;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 6em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 20em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
