@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Red Rose', Arial;
   padding: 0px .4px 0px .4px;
+  font-weight: normal;
 }
 
 ul {
@@ -69,6 +70,11 @@ header ul a {
   border-radius: 4px;
 }
 
+h1,
+h3 {
+  font-weight: normal;
+}
+
 .hero-image {
   display: none;
 }
@@ -94,7 +100,6 @@ header ul a {
 
 .subtitle {
   text-transform: uppercase;
-  font-weight: bold;
   color: black;
   letter-spacing: .2em;
   font-size: 1.5em;
@@ -103,7 +108,6 @@ header ul a {
 
 .subtitle2 {
   color: gold;
-  font-weight: bold;
   background: #007bf7;
   padding: .5em;
   margin: -1px;
@@ -116,6 +120,7 @@ header ul a {
   padding: .3em;
   margin-top: -1em;
   text-align: center;
+  opacity: 75%;
 }
 
 .subtitle4 {
@@ -124,11 +129,11 @@ header ul a {
   padding: 1.3em;
   margin-top: -2em;
   text-align: center;
+  opacity: 75%;
 }
 
 .featured-title {
   color: black;
-  font-weight: bold;
   font-size: 1.3em;
   margin-top: -.4em;
   display: block;
@@ -144,7 +149,7 @@ header ul a {
 }
 
 .skills {
-  background: #E5E5E5;
+  background: #fff;
 }
 
 .skills-contianer ul li {
@@ -175,7 +180,6 @@ header ul a {
 }
 
 .skill-title {
-  font-weight: bold;
   display: none;
 }
 
@@ -187,6 +191,7 @@ header ul a {
 hr {
   color: black;
   border-width: 1px;
+  border: 1px solid #000000;
 }
 
 .portfolio {
@@ -254,6 +259,7 @@ hr {
 
 .copyright {
   margin-left: 1em;
+  opacity: 75%;
 }
 
 .bottom {
