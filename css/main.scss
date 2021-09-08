@@ -5,6 +5,7 @@ body {
     font-family: 'Red Rose', Arial;
     padding: 0px .4px 0px .4px;
     font-weight: normal;
+    width: auto;
 }
 
 ul {
@@ -102,6 +103,7 @@ h3 {
     padding: .5em;
     margin: -1px;
     margin-bottom: 1.5em;
+    text-align: center;
 }
 
 .subtitle3 {
@@ -111,6 +113,7 @@ h3 {
     margin-top: -1em;
     text-align: center;
     opacity: 75%;
+    text-align: center;
 }
 
 .subtitle4 {
@@ -197,7 +200,7 @@ hr {
 
 .counting-sec {
     // padding: 40px 0;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(15deg, #007bf7, #2096d1);
 }
 
@@ -253,6 +256,7 @@ hr {
 
 // Mobile Design First (Above)
 // Tablet Design (Below)
+//
 @media only screen and (min-width: 800px) {
     .featured,
     .portfolio {
@@ -263,14 +267,18 @@ hr {
         display: grid;
         grid-template-columns: 40% auto;
     }
-    .left,
     .portfolio-left {
         display: grid;
         place-content: center;
     }
     .right {
+        display: flex;
         margin-left: 2em;
         margin-top: 1em;
+    }
+    .center {
+        display: grid;
+        column-count: 1;
     }
     .skills {
         margin-top: -5em;
@@ -298,6 +306,22 @@ hr {
         top: 0;
         left: 0;
         z-index: -1;
+    }
+    .left {
+        display: flex;
+    }
+    .timeline1 {
+        width: 22em;
+    }
+    .ssr1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ssr1>*:nth-child(1) {
+        flex: 1 1 50%;
+    }
+    .ssr1>*:nth-child(2) {
+        flex: 1 1 50%;
     }
 }
 

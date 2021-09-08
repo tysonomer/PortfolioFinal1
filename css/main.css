@@ -5,6 +5,7 @@ body {
   font-family: 'Red Rose', Arial;
   padding: 0px .4px 0px .4px;
   font-weight: normal;
+  width: auto;
 }
 
 ul {
@@ -112,6 +113,7 @@ h3 {
   padding: .5em;
   margin: -1px;
   margin-bottom: 1.5em;
+  text-align: center;
 }
 
 .subtitle3 {
@@ -121,6 +123,7 @@ h3 {
   margin-top: -1em;
   text-align: center;
   opacity: 75%;
+  text-align: center;
 }
 
 .subtitle4 {
@@ -210,7 +213,7 @@ hr {
 }
 
 .counting-sec {
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(15deg, #007bf7, #2096d1);
 }
 
@@ -278,15 +281,23 @@ hr {
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
-  .left,
   .portfolio-left {
     display: -ms-grid;
     display: grid;
     place-content: center;
   }
   .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 2em;
     margin-top: 1em;
+  }
+  .center {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-count: 1;
+            column-count: 1;
   }
   .skills {
     margin-top: -5em;
@@ -316,6 +327,31 @@ hr {
     top: 0;
     left: 0;
     z-index: -1;
+  }
+  .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .timeline1 {
+    width: 22em;
+  }
+  .ssr1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ssr1 > *:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .ssr1 > *:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
   }
 }
 
