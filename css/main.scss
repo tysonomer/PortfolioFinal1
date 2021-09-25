@@ -20,6 +20,7 @@
     
     img {
         width: 100%;
+        margin-top: -1em;
     }
     
     .nav-container {
@@ -77,6 +78,7 @@
     
     .featured {
         position: relative;
+        margin-top: 1.5em;
     }
     
     .left {
@@ -143,6 +145,7 @@
     
     .skills {
         background: #fff;
+        margin-top: 2em;
     }
     
     .skills-contianer ul li {
@@ -150,6 +153,10 @@
         padding: 2em;
         border-radius: 1em;
         margin-bottom: 1em;
+    }
+    
+    .exp {
+        margin-top: 2em;
     }
     
     .icon-container {
@@ -183,6 +190,10 @@
         border: 1px solid #000000;
     }
     
+    hr::after {
+        margin-top: 2em;
+    }
+    
     .portfolio {
         background: white;
     }
@@ -213,10 +224,8 @@
     .col {
         flex: 1;
         text-align: center;
-        // padding: 20px;
         color: #fff;
         text-transform: uppercase;
-        padding-bottom: 1em;
         border-left: 1px solid #fff;
     }
     
@@ -227,6 +236,7 @@
     .col i {
         font-size: 40px;
         color: #333;
+        margin-top: -1em;
     }
     
     .num+ {
@@ -240,14 +250,17 @@
     }
     
     .up-arrow img {
+        float: right;
         width: 7%;
-        margin-left: 23.5em;
-        margin-top: 1px;
+        margin-left: 32em;
+        margin-top: -6px;
     }
     
     .copyright {
-        margin-left: 1em;
+        padding-right: 10px;
+        margin-top: -2em;
         opacity: 75%;
+        float: right;
     }
     
     .bottom {
@@ -325,6 +338,9 @@
         }
         .copyright {
             margin-left: 10em;
+        }
+        .col {
+            display: none;
         }
     }
     
