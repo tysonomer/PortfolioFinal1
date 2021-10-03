@@ -19,38 +19,29 @@
 
     <div class="nav-continaer">
         <header>
-            <a href="index.html" class="logo"><img src="/images/T.png" alt="Logo-image"></a>
+            <a href="index.html" class="logo"><img src="/images/T-logo.svg" alt="Logo-image"></a>
             <nav>
                 <ul>
                     <li>
+                        <a href="#"><img src="/images/Figma-Logo-small.svg" alt=""></a>
                         <a href="#">Me</a>
                         <a href="#">Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <!-- <div class="social-header">
-            <ul>
-                <li>
-                    <a href="#"><img src="images/dribble.png" alt="dribble"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/behance.png" alt="behance"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-                </li>
-            </ul>
-        </div> -->
+
     </div>
 
     <div class="hero">
-        <div class="content">
-            <h1>Tyson Omer</h1>
-            <h3>Designer & Developer of Digital Experiences</h3>
 
+        <div class="content">
+
+            <h1 class="stagger1">Tyson Omer</h1>
+            <h3 class="stagger1">Designer & Developer of Digital Experiences</h3>
         </div>
-        <!-- <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77" style="transform: translate(0px, 0px); opacity: 1;">
+    </div>
+    <!-- <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77" style="transform: translate(0px, 0px); opacity: 1;">
             <g id="scroll" transform="translate(-253 -787)">
             <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff" stroke-width="4">
                 <rect width="40" height="77" rx="20" stroke="none"></rect>
@@ -58,16 +49,16 @@
             </g>
             <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#fff"></circle>
             </g>
-        </svg> -->
-    </div>
-    <!-- <svg class="hero-image" width="444" height="410" viewBox="0 0 444 410" fill="none">
+        </svg>
+    </div> -->
+    <svg class="hero-image" width="444" height="410" viewBox="0 0 444 410" fill="none">
         <rect class="square-anim" x="298" y="273" width="145" height="134" rx="28" fill="#D47C3C"/>
         <rect class="square-anim" y="134" width="145" height="134" rx="28" fill="white"/>
         <rect class="square-anim" x="152" y="273" width="145" height="134" rx="28" fill="#F4B45C"/>
         <rect class="square-anim" x="152" y="3" width="145" height="134" rx="28" fill="#ECDB96"/>
         <rect class="square-anim" x="152" y="138" width="145" height="134" rx="67" fill="#B4CCBC"/>
         </svg>
-    </div> -->
+    </div>
 
     <div class="left">
         <div class="counting-sec">
@@ -119,9 +110,9 @@
             <div class="center">
                 <div class="srr1">
                     <div class="col">
-                        <img src="/images/TabletBrochure1.png" alt="">
-                        <img src="/images/TabletBrocure2.png" alt="">
-                        <img src="/images/TabletD&C3.png" alt="">
+                        <img src="/images/TabletBrochure1.svg" alt="">
+                        <img src="/images/TabletBrocure2.svg" alt="">
+                        <img src="/images/TabletD&C3.svg" alt="">
                     </div>
                 </div>
                 <div class="srr2">
@@ -133,8 +124,6 @@
 
     </section>
 
-
-    <!-- <div class="right"> -->
 
     </div>
     </div>
@@ -161,7 +150,7 @@
 
 
             <div class="col">
-                <img src="/images/ARPrintedBookImage.png" alt="">
+                <img src="/images/ARP.png" alt="">
             </div>
 
 
@@ -274,7 +263,30 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
             <script src="main.js"></script>
+
+            <script>
+                gsap.registerPlugin(ScrollTrigger);
+
+                var tl = gsap.timeline();
+
+                tl.from('.hero', {
+                    y: '-30%',
+                    opacity: 0,
+                    duration: 1,
+                    ease: Power4.easeOut
+                })
+
+                tl.from('.stagger1', {
+                    opacity: 0,
+                    x: -50,
+                    duration: 2,
+                    stagger: .3,
+                    ease: Power4.easeOut
+                })
+            </script>
 </body>
 
 </html>

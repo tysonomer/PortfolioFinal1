@@ -1,444 +1,481 @@
-    @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
-    body {
-        height: 100vh;
-        margin: 0;
-        font-family: 'Red Rose', Arial;
-        padding: 0px .4px 0px .4px;
-        font-weight: normal;
-        width: auto;
-    }
-    
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Red Rose', Arial;
+    padding: 0px .4px 0px .4px;
+    font-weight: normal;
+    width: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    margin-top: -1em;
+}
+
+nav {
+    padding-top: 17px;
+}
+
+.nav-container {
+    background: #fff;
     a {
-        text-decoration: none;
+        color: black;
     }
-    
-    img {
-        width: 100%;
-        margin-top: -1em;
-    }
-    
-    .nav-container {
-        background: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    ul {
+        display: flex;
         a {
+            display: initial;
+            padding: 0 .5em;
             color: black;
+            font-size: 20px;
+        }
+        img {
+            width: 15px;
         }
     }
-    
+}
+
+.logo {
+    margin: 8px 0 0 -14px;
+}
+
+.social-header,
+.hero-design {
+    display: none;
+}
+
+.hero {
+    background: rgba(212, 124, 60, 1);
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+    border-radius: 4px;
+}
+
+.glass {
+    background: radial-gradient(83.36% 206.78% at -328.38% 32.19%, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(40px);
+    border-radius: 36px;
+    width: 1050px;
+    height: 940px;
+    left: 3px;
+    top: 6px;
+}
+
+h1,
+h3 {
+    font-weight: normal;
+}
+
+.hero-image {
+    display: none;
+}
+
+.section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured {
+    position: relative;
+    margin-top: 1.5em;
+}
+
+.left {
+    text-align: center;
+    padding-top: 2px;
+    margin: -1px;
+}
+
+.left1-transistion2 {
+    margin-bottom: -4px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.subtitle2 {
+    color: gold;
+    background: #007bf7;
+    padding: .5em;
+    margin: -1px;
+    margin-bottom: 1.5em;
+    text-align: center;
+    width: 100vw;
+}
+
+.subtitle3 {
+    color: black;
+    font-size: small;
+    padding: .3em;
+    margin-top: -1em;
+    text-align: center;
+    opacity: 75%;
+    text-align: center;
+}
+
+.subtitle4 {
+    color: black;
+    font-size: small;
+    padding: 1.3em;
+    margin-top: -2em;
+    text-align: center;
+    opacity: 75%;
+}
+
+.featured-title {
+    color: black;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+
+.featured-desc {
+    color: black;
+    margin-bottom: 3em;
+    font-size: .85em;
+    line-height: 1.8em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.skills {
+    background: #fff;
+    margin-top: 2em;
+}
+
+.skills-contianer ul li {
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.exp {
+    margin-top: 2em;
+}
+
+.icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    &.one {
+        width: 50px;
+    }
+    &.two {
+        width: 100px;
+    }
+    &.three {
+        width: 60px;
+    }
+}
+
+.skill-title {
+    display: none;
+}
+
+.featured-desc {
+    margin-bottom: 2em;
+    display: none;
+}
+
+hr {
+    color: black;
+    border-width: 1px;
+    border: 1px solid #000000;
+    width: 99vw;
+}
+
+hr::after {
+    margin-top: 2em;
+}
+
+.portfolio {
+    background: white;
+}
+
+.portfolio-container a img {
+    border-radius: 3px;
+    margin-bottom: 2em;
+}
+
+.middle {
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.counting-sec {
+    width: 101vw;
+    background: linear-gradient(15deg, #007bf7, #2096d1);
+}
+
+.inner-width {
+    margin: auto;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-left: 1px solid #fff;
+}
+
+.counting-name {
+    font-size: 10px;
+}
+
+.col i {
+    font-size: 40px;
+    color: #333;
+    margin-top: -1em;
+}
+
+.num+ {
+    font-size: 60px;
+    margin: 20px 5px 0 12px;
+}
+
+.num {
+    font-size: 60px;
+    margin: 20px 5px 0 12px;
+}
+
+.up-arrow img {
+    float: right;
+    width: 7%;
+    margin-left: 32em;
+    margin-top: -6px;
+}
+
+.copyright {
+    padding-right: 10px;
+    margin-top: -2em;
+    opacity: 75%;
+    float: right;
+}
+
+.bottom {
+    margin-left: 50%;
+}
+
+// Mobile Design First (Above)
+// Tablet Design (Below)
+//
+@media only screen and (min-width: 800px) {
+    .navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        background: deepskyblue;
+    }
+    .featured,
+    .portfolio {
+        text-align: left;
+    }
+    .featured,
+    .portfolio-container {
+        display: flex;
+        grid-template-columns: 40% auto;
+    }
+    .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+    .right {
+        display: flex;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    .center {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .skills {
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 7em;
+    }
+    .skills-contianer ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+    .portfolio {
+        padding-top: 7em;
+    }
+    .portfolio-container img {
+        margin-left: 2em;
+    }
+    .featured::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #C4C4C4;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: none;
+    }
+    .left {
+        display: grid;
+    }
+    .up-arrow img {
+        margin-left: 44.5em;
+    }
+    .copyright {
+        margin-left: 10em;
+    }
+}
+
+// Tablet Design (Above)
+// Desktop Design 1050px (Below)
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 89vh;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        header {
+            background: rgba(212, 124, 60, 1);
+        }
+    }
     header {
+        padding: 2em 2em 2em 4em;
+    }
+    .social-header {
+        padding: 2em;
+    }
+}
+
+.social-header {
+    display: block;
+    ul {
         display: flex;
         justify-content: space-between;
-        padding: 2em;
-        ul {
-            display: flex;
-            a {
-                display: initial;
-                padding: 0 1em;
-                color: black;
-            }
+        width: 7em;
+        float: right;
+        img {
+            width: 20px;
         }
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+    .content {
+        background: rgba(212, 124, 60, 1);
+        padding: 6em 8em 6em 4em;
+        text-align: center;
+        h1 {
+            font-size: 72px;
+            line-height: 1.2em;
+        }
+        h3 {
+            font-size: 36px;
+        }
+    }
+}
+
+.meet {
+    margin: unset;
+}
+
+.hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.portfolio img {
+    float: right;
+    max-width: 500px;
+}
+
+.logo {
+    margin: 8px 0 0 -50px;
+    float: left;
+}
+
+
+}
+// Desktop Design 1050px (Above)
+// Desktop Design 1250px Wide (Below)
+@media only screen and (min-width: 1250px) {
+    header {
+        padding: 2em 2em 2em 10em;
+    }
+    
+    .social-header {
+        padding: 2em 10em 2em 0;
+    }
+    
+    section {
+        padding: 6em 10em 4em 10em;
+    }
+    
+    .hero .content {
+        padding: 6em 8em 6em 10em;
+    }
+}
+// Desktop Design 1250px Wide (Above)
+// Desktop Design 1550px Wide (Below)
+@media only screen and (min-width:1550px) {
+    header {
+        padding: 2em 2em 2em 20em;
+    }
+    
+    .social-header {
+        padding: 2em 20em 2em 0;
+    }
+    
+    section {
+        padding: 6em 20em 4em 20em;
+    }
+    
+    .hero .content {
+        padding: 6em 8em 6em 20em;
     }
     
     .logo {
-        margin: -2% 0 0 -3%;
+        margin: 8px 0 0 -300px;
     }
-    
-    .social-header,
-    .hero-design {
-        display: none;
-    }
-    
-    .hero {
-        background: rgba(212, 124, 60, 1);
-        color: white;
-        display: grid;
-        text-align: center;
-        padding: 4em;
-        border-radius: 4px;
-    }
-    
-    h1,
-    h3 {
-        font-weight: normal;
-    }
-    
-    .hero-image {
-        display: none;
-    }
-    
-    .section {
-        padding: 4em 2em;
-        text-align: center;
-    }
-    
-    .featured {
-        position: relative;
-        margin-top: 1.5em;
-    }
-    
-    .left {
-        text-align: center;
-        padding-top: 2px;
-        margin: -1px;
-    }
-    
-    .left1-transistion2 {
-        margin-bottom: -4px;
-    }
-    
-    .subtitle {
-        text-transform: uppercase;
-        color: black;
-        letter-spacing: .2em;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    
-    .subtitle2 {
-        color: gold;
-        background: #007bf7;
-        padding: .5em;
-        margin: -1px;
-        margin-bottom: 1.5em;
-        text-align: center;
-    }
-    
-    .subtitle3 {
-        color: black;
-        font-size: small;
-        padding: .3em;
-        margin-top: -1em;
-        text-align: center;
-        opacity: 75%;
-        text-align: center;
-    }
-    
-    .subtitle4 {
-        color: black;
-        font-size: small;
-        padding: 1.3em;
-        margin-top: -2em;
-        text-align: center;
-        opacity: 75%;
-    }
-    
-    .featured-title {
-        color: black;
-        font-size: 1.3em;
-        margin-top: -.4em;
-        display: block;
-    }
-    
-    .featured-desc {
-        color: black;
-        margin-bottom: 3em;
-        font-size: .85em;
-        line-height: 1.8em;
-        font-weight: 400;
-        text-align: center;
-    }
-    
-    .skills {
-        background: #fff;
-        margin-top: 2em;
-    }
-    
-    .skills-contianer ul li {
-        background: white;
-        padding: 2em;
-        border-radius: 1em;
-        margin-bottom: 1em;
-    }
-    
-    .exp {
-        margin-top: 2em;
-    }
-    
-    .icon-container {
-        height: 100px;
-        display: grid;
-        place-content: center;
-        margin: 0 auto;
-        &.one {
-            width: 50px;
-        }
-        &.two {
-            width: 100px;
-        }
-        &.three {
-            width: 60px;
-        }
-    }
-    
-    .skill-title {
-        display: none;
-    }
-    
-    .featured-desc {
-        margin-bottom: 2em;
-        display: none;
-    }
-    
-    hr {
-        color: black;
-        border-width: 1px;
-        border: 1px solid #000000;
-    }
-    
-    hr::after {
-        margin-top: 2em;
-    }
-    
-    .portfolio {
-        background: white;
-    }
-    
-    .portfolio-container a img {
-        border-radius: 3px;
-        margin-bottom: 2em;
-    }
-    
-    .middle {
-        // position: absolute;
-        width: 100%;
-        transform: translateY(-50%);
-    }
-    
-    .counting-sec {
-        // padding: 40px 0;
-        width: 100vw;
-        background: linear-gradient(15deg, #007bf7, #2096d1);
-    }
-    
-    .inner-width {
-        // max-width: 1200px;
-        margin: auto;
-        display: flex;
-    }
-    
-    .col {
-        flex: 1;
-        text-align: center;
-        color: #fff;
-        text-transform: uppercase;
-        border-left: 1px solid #fff;
-    }
-    
-    .counting-name {
-        font-size: 10px;
-    }
-    
-    .col i {
-        font-size: 40px;
-        color: #333;
-        margin-top: -1em;
-    }
-    
-    .num+ {
-        font-size: 60px;
-        margin: 20px 5px 0 12px;
-    }
-    
-    .num {
-        font-size: 60px;
-        margin: 20px 5px 0 12px;
-    }
-    
-    .up-arrow img {
-        float: right;
-        width: 7%;
-        margin-left: 32em;
-        margin-top: -6px;
-    }
-    
-    .copyright {
-        padding-right: 10px;
-        margin-top: -2em;
-        opacity: 75%;
-        float: right;
-    }
-    
-    .bottom {
-        margin-left: 59%;
-    }
-    
-    // Mobile Design First (Above)
-    // Tablet Design (Below)
-    //
-    @media only screen and (min-width: 800px) {
-        .navigation {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            list-style: none;
-            margin: 0;
-            background: deepskyblue;
-        }
-        .featured,
-        .portfolio {
-            text-align: left;
-        }
-        .featured,
-        .portfolio-container {
-            display: flex;
-            grid-template-columns: 40% auto;
-        }
-        .portfolio-left {
-            display: grid;
-            place-content: center;
-        }
-        .right {
-            display: flex;
-            margin-left: 2em;
-            margin-top: 1em;
-        }
-        .center {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-        .skills {
-            margin-top: -5em;
-            margin-bottom: -7em;
-            padding-top: 7em;
-        }
-        .skills-contianer ul {
-            display: grid;
-            grid-template-columns: repeat(3, auto);
-            grid-gap: 1em;
-        }
-        .portfolio {
-            padding-top: 7em;
-        }
-        .portfolio-container img {
-            margin-left: 2em;
-        }
-        .featured::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #C4C4C4;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            display: none;
-        }
-        .left {
-            display: grid;
-        }
-        .up-arrow img {
-            margin-left: 44.5em;
-        }
-        .copyright {
-            margin-left: 10em;
-        }
-        .col {
-            display: none;
-        }
-    }
-    
-    // Tablet Design (Above)
-    // Desktop Design 1050px (Below)
-    @media only screen and (min-width: 1050px) {
-        .hero {
-            height: 90vh;
-        }
-        .nav-container {
-            display: grid;
-            grid-template-columns: 66% auto;
-            background: unset;
-            header {
-                background: wheat;
-            }
-        }
-        header {
-            padding: 2em 2em 2em 4em;
-        }
-        .social-header {
-            padding: 2em;
-        }
-        section {
-            padding: 4em;
-        }
-        .social-header {
-            display: block;
-            ul {
-                display: flex;
-                justify-content: space-between;
-                width: 7em;
-                float: right;
-                img {
-                    width: 20px;
-                }
-            }
-        }
-        .hero {
-            display: grid;
-            grid-template-columns: 66% auto;
-            background: unset;
-            padding: 0;
-            .content {
-                background: wheat;
-                padding: 6em 8em 6em 4em;
-                text-align: left;
-                h1 {
-                    font-size: 3em;
-                    line-height: 1.2em;
-                }
-            }
-        }
-        .meet {
-            margin: unset;
-        }
-        .hero-design {
-            display: unset;
-            margin-left: -50%;
-            margin-top: 15%;
-            width: 100%;
-        }
-        .portfolio img {
-            float: right;
-            max-width: 500px;
-        }
-    }
-    
-    // Desktop Design 1050px (Above)
-    // Desktop Design 1250px Wide (Below)
-    @media only screen and (min-width: 1250px) {
-        header {
-            padding: 2em 2em 2em 10em;
-        }
-        .social-header {
-            padding: 2em 10em 2em 0;
-        }
-        section {
-            padding: 6em 10em 4em 10em;
-        }
-        .hero .content {
-            padding: 6em 8em 6em 10em;
-        }
-    }
-    
-    // Desktop Design 1250px Wide (Above)
-    // Desktop Design 1550px Wide (Below)
-    @media only screen and (min-width:1550px) {
-        header {
-            padding: 2em 2em 2em 20em;
-        }
-        .social-header {
-            padding: 2em 20em 2em 0;
-        }
-        section {
-            padding: 6em 20em 4em 20em;
-        }
-        .hero .content {
-            padding: 6em 8em 6em 20em;
-        }
-    }
+}
