@@ -435,46 +435,38 @@ hr::after {
     float: left;
 }
 
-
-}
 // Desktop Design 1050px (Above)
 // Desktop Design 1250px Wide (Below)
 @media only screen and (min-width: 1250px) {
     header {
         padding: 2em 2em 2em 10em;
     }
-    
     .social-header {
         padding: 2em 10em 2em 0;
     }
-    
     section {
         padding: 6em 10em 4em 10em;
     }
-    
     .hero .content {
         padding: 6em 8em 6em 10em;
     }
 }
+
 // Desktop Design 1250px Wide (Above)
 // Desktop Design 1550px Wide (Below)
 @media only screen and (min-width:1550px) {
     header {
         padding: 2em 2em 2em 20em;
     }
-    
     .social-header {
         padding: 2em 20em 2em 0;
     }
-    
     section {
         padding: 6em 20em 4em 20em;
     }
-    
     .hero .content {
         padding: 6em 8em 6em 20em;
     }
-    
     .logo {
         margin: 8px 0 0 -300px;
     }
