@@ -66,6 +66,11 @@ header ul img {
     margin: 8px 0 0 -14px;
 }
 
+.social-header,
+.hero-design {
+    display: none;
+}
+
 .hero {
     background: #d47c3c;
     color: white;
@@ -95,7 +100,7 @@ h3 {
     font-weight: normal;
 }
 
-.hero-design {
+.hero-image {
     display: none;
 }
 
@@ -393,12 +398,6 @@ hr::after {
     .copyright {
         margin-left: 10em;
     }
-    .hero {
-        display: none;
-    }
-    .hero-design {
-        display: unset;
-    }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -442,6 +441,15 @@ hr::after {
     width: 20px;
 }
 
+.hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+}
+
 .hero .content {
     background: #d47c3c;
     padding: 6em 8em 6em 4em;
@@ -462,7 +470,10 @@ hr::after {
 }
 
 .hero-design {
-    width: 69%;
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
 }
 
 .portfolio img {
@@ -471,12 +482,8 @@ hr::after {
 }
 
 .logo {
-    margin: 8px 0 0 -25px;
+    margin: 8px 0 0 -50px;
     float: left;
-}
-
-.counting-name {
-    font-size: 20px;
 }
 
 @media only screen and (min-width: 1250px) {
@@ -491,9 +498,6 @@ hr::after {
     }
     .hero .content {
         padding: 6em 8em 6em 10em;
-    }
-    .logo {
-        margin: 8px 0 0 -150px;
     }
 }
 
